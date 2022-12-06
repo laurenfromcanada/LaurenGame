@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="styles/base.css">
     <title>Lauren's Budget Game</title>
 </head>
-
 <body>
-
     <script>
-
-        function myFunction() {
+        function myFunction1() {
           var x = document.getElementById("transportation");
-          x.value = x.value.toUpperCase()
+          if (x.value === 1){
+            total = total - 1500
+          }
+          else if (x.value === 2){
+            total = total - 2000
         }
-
+    }
         </script>
 
     <main id="budget-main">
@@ -32,15 +33,15 @@
             <p>1. Economy Transportation: $1500 (happiness- 10)</p>
             <p>2. First Class Transportation: $2000 (happiness- 50)</p>
             <img src = "">
-            <input class="allocation" id="transportation" onchange="myFunction"></div>
+            <input class="allocation" id="transportation" onchange="myFunction1()"></div>
         </div>
-        <div class="trip-allocation" id="alloc-2">
+        <div class="trip-allocation" id = "alloc-2">
             <h4 id="tri">Living Accommodations for 7 days:</h4>
             <p>1. Motel Room: $700 (happiness- 10)</p>
             <p>2. Airbnb: $950 (happiness- 50)</p>
             <p>3. Suite: $1200 (happiness- 100)</p>
             <img src="#">
-            <input class="allocation" id="accomadations" type="number" required><script>expense</script></div>
+            <input class="allocation" id = "accomadations" type="number" required><script>expense</script></div>
         </div>
         <div class="trip-allocation" id="alloc-3">
             <h4>Food</h4>
