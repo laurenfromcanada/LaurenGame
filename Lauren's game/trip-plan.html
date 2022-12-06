@@ -7,21 +7,32 @@
     <link rel="stylesheet" href="styles/base.css">
     <title>Lauren's Budget Game</title>
 </head>
+
 <body>
+
+    <script>
+
+        function myFunction() {
+          var x = document.getElementById("transportation");
+          x.value = x.value.toUpperCase()
+        }
+
+        </script>
+
     <main id="budget-main">
         <p id="urMom">Remember!</p>
         <p id="urMom">1. You will not be able to make changes to the amounts you input once you start your trip.</p>
         <p id="urMom">2. Happiness points from the transportation and living accommodations you select will be added to your first day on the vacation.</p>
         <p id="urMom">3. You need to obtain a minimum of 200 happiness points a day to enjoy your trip.</p>
-        <p id="total-budget">Total Budget: </p>
-        <p id="happiness">Happiness</p>  
+        <p id="total-budget">Total Budget: 10,000 $ </p>
+        <p id="happiness">Happiness: 100% </p>
         <div id="budget-block">
         <div class="trip-allocation" id="alloc-1">
-            <h4 id="tri">Transportation (including flight, car rental, gas, and parking):</h4>
+            <h4 id="trip">Transportation (including flight, car rental, gas, and parking):</h4>
             <p>1. Economy Transportation: $1500 (happiness- 10)</p>
             <p>2. First Class Transportation: $2000 (happiness- 50)</p>
-            <img src="#">
-            <input class="allocation" id="transportation" type="text" required></div>
+            <img src = "">
+            <input class="allocation" id="transportation" onchange="myFunction"></div>
         </div>
         <div class="trip-allocation" id="alloc-2">
             <h4 id="tri">Living Accommodations for 7 days:</h4>
@@ -29,21 +40,23 @@
             <p>2. Airbnb: $950 (happiness- 50)</p>
             <p>3. Suite: $1200 (happiness- 100)</p>
             <img src="#">
-            <input class="allocation" id="accomadations" type="text" required></div>
+            <input class="allocation" id="accomadations" type="number" required><script>expense</script></div>
         </div>
         <div class="trip-allocation" id="alloc-3">
             <h4>Food</h4>
             <p>The suggested amount is to have between 12%-20% of your total savings.</p>
             <img src="#">
-            <input class="allocation" id="food" type="text" required></div>
+            <input class="allocation" id="food" type="text" required><script>expense</script></div>
         </div>
         <div class="trip-allocation" id="alloc-4">
             <h4>Recreation:</h4>
             <p>The suggested amount is to have between 20%-50% of your total savings.</p>
             <img src="#">
-            <input class="allocation" id="recreation" type="text" required></div>
+            <input class="allocation" id="recreation" type="number" required><script>expense</script></div>
         </div>
         </div>
+        <button onclick="total">hey</button>
     </main>
 </body>
+
 </html>
