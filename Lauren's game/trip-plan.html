@@ -10,13 +10,30 @@
 <body>
     <script>
         let total = 10000
+        let happiness = 200
         function myFunction1() {
           var x = document.getElementById("transportation");
           if (x.value === 1){
             total = total - 1500
+            happiness = happiness - 10
+
           }
           else if (x.value === 2){
             total = total - 2000
+            happiness = happiness - 50
+        }
+    }
+
+    function myFunction2() {
+          var x = document.getElementById("accomadations");
+          if (x.value === 1){
+            total = total - 1500
+            happiness = happiness - 50
+            
+          }
+          else if (x.value === 2){
+            total = total - 2000
+            happiness = happiness - 100
         }
     }
         </script>
@@ -27,7 +44,7 @@
         <p id="urMom">2. Happiness points from the transportation and living accommodations you select will be added to your first day on the vacation.</p>
         <p id="urMom">3. You need to obtain a minimum of 200 happiness points a day to enjoy your trip.</p>
         <p id="total-budget">Total Budget: 10,000 $ </p>
-        <p id="happiness">Happiness: 100% </p>
+        <p id="happiness">Happiness: 200 </p>
         <div id="budget-block">
         <div class="trip-allocation" id="alloc-1">
             <h4 id="trip">Transportation (including flight, car rental, gas, and parking):</h4>
@@ -57,7 +74,7 @@
             <input class="allocation" id="recreation" type="number" required><script>expense</script></div>
         </div>
         </div>
-        <button onclick="total">hey</button>
+        <button onclick={console.log(total)}>hey</button>
     </main>
 </body>
 
