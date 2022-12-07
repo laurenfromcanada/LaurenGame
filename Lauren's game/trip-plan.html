@@ -52,6 +52,7 @@
         <div id="budget-block">
         <div class="trip-allocation" id="alloc-1">
             <h4 id="trip">Transportation (including flight, car rental, gas, and parking):</h4>
+            <p>Type in 1 or 2 in the box below for which option you wish to purchase.</p>
             <p>1. Economy Transportation: $1500 (happiness- 10)</p>
             <p>2. First Class Transportation: $2000 (happiness- 50)</p>
             <img src = "">
@@ -59,6 +60,7 @@
         </div>
         <div class="trip-allocation" id = "alloc-2">
             <h4 id="tri">Living Accommodations for 7 days:</h4>
+            <p>Type in 1, 2, or 3 in the box below for which option you wish to purchase.</p>
             <p>1. Motel Room: $700 (happiness- 10)</p>
             <p>2. Airbnb: $950 (happiness- 50)</p>
             <p>3. Suite: $1200 (happiness- 100)</p>
@@ -68,17 +70,19 @@
         <div class="trip-allocation" id="alloc-3">
             <h4>Food</h4>
             <p>The suggested amount is to have between 12%-20% of your total savings.</p>
+            <p>Type in the amount of money you are going to budget for your food on your trip.</p>
             <img src="#">
             <input class="allocation" id="food" type="text" required><script>expense</script></div>
         </div>
         <div class="trip-allocation" id="alloc-4">
             <h4>Recreation:</h4>
             <p>The suggested amount is to have between 20%-50% of your total savings.</p>
+            <p>Type in the amount of money you are going to budget for recreational activities on your trip.</p>
             <img src="#">
             <input class="allocation" id="recreation" type="number" required><script>expense</script></div>
         </div>
         </div>
-        <button onclick={console.log(total)}>hey</button>
+        <button onclick={console.log(total)}>Start Trip</button>
     </main>
 </body>
 
