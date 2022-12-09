@@ -65,10 +65,20 @@ function food1(){
     document.getElementById("script").innerHTML = budget
 }
 
-// function recreation1(){
-//     let food = document.getElementById("food")
-//     budget = budget - food
-//     document.getElementById("script").value = budget
-//     console.log('test')
-// }
+function recreation1(){
+    let recs = document.getElementById("rec").value
+    budget = budget - recs
+    console.log(recs)
+    document.getElementById("rec").innerHTML = "";
+    document.getElementById("script").innerHTML = budget
+}
+
+function HorS(){
+    if (budget < 3000){
+        document.getElementById("hapo").innerHTML = "Sad"
+    }
+    else if(budget >= 3000){
+        document.getElementById("hapo").innerHTML = "Great"
+    }
+}
 

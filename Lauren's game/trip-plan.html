@@ -31,7 +31,7 @@
             <p>Click below for which option you wish to purchase.</p>
             <p>1. Economy Transportation: $1500 (happiness- 10)</p> 
 
-            <button id="eco" onclick="tran1()">economy</button>
+            <button id="eco" onclick="tran1()">Economy</button>
             <p>2. First Class Transportation: $2000 (happiness- 50)</p>
             <button id="first" onclick="tran2()">First Class</button>
             
@@ -63,11 +63,12 @@
             <p>The suggested amount is to have between 20%-50% of your total savings.</p>
             <p>Type in the amount of money you are going to budget for recreational activities on your trip.</p>
             
-            <center><input class="allocation" id="recreation" type="number" required></center>
+            <center><input class="allocation" id="rec" type="number">
+                <button onclick="recreation1()">Budget Activities</button></center>
             </div>
         </div>
         </div>
-        <button onclick={console.log(total)}>Start Trip</button>
+        <a href="tripover.html"><button id="submit">Next</button></a>
     </main>
 </body>
 
