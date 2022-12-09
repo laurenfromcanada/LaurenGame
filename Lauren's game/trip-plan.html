@@ -27,7 +27,7 @@
 
         <div id="budget-block">
         <div class="trip-allocation" id="alloc-1">
-            <h4 id="trip">Transportation (including flight, car rental, gas, and parking):</h4>
+            <h3 id="trip">Transportation (including flight, car rental, gas, and parking):</h3>
             <p>Type in 1 or 2 in the box below for which option you wish to purchase.</p>
             <p>1. Economy Transportation: $1500 (happiness- 10)</p> 
 
@@ -40,7 +40,7 @@
         </div>
         </div>
         <div class="trip-allocation" id = "alloc-2">
-            <h4 id="tri">Living Accommodations for 7 days:</h4>
+            <h3 id="tri">Living Accommodations for 7 days:</h3>
             <p>Type in 1, 2, or 3 in the box below for which option you wish to purchase.</p>
             <p>1. Motel Room: $700 (happiness- 10)</p> <button id="motel" onclick="live1()">Motel</button>
             <p>2. Airbnb: $950 (happiness- 50)</p> <button id="air" onclick="live2()">Airbnb</button>
@@ -49,11 +49,14 @@
             
         </div>
         <div class="trip-allocation" id="alloc-3">
-            <h4>Food</h4>
+            <h3>Food</h3>
             <p>The suggested amount is to have between 12%-20% of your total savings.</p>
             <p>Type in the amount of money you are going to budget for your food on your trip.</p>
             
-            <input class="allocation" id="food" type="number" required></div>
+            <center><input class="allocation" id="food" type="number">
+                <button onclick="food1()">Budget Food</button>
+            </center></div>
+            
         </div>
         <div class="trip-allocation" id="alloc-4">
             <h4>Recreation:</h4>

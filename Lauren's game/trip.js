@@ -59,6 +59,8 @@ function live3(){
     document.getElementById("suite").innerHTML = "";
 }
 
-function food(){
-    
+function food1(){
+    let food = document.getElementById("food")
+    budget = budget - food
+    document.getElementById("script").value = budget
 }
