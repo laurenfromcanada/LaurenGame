@@ -21,7 +21,7 @@ function tran1(){
 }
 
 function tran2(){
-    budget = budget - 1500
+    budget = budget - 2000
     happiness = happiness + 50
     document.getElementById("hap").innerHTML = happiness
     document.getElementById("script").innerHTML = budget
