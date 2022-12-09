@@ -75,11 +75,17 @@ function recreation1(){
 
 function HorS(){
     document.getElementById("budo").innerHTML = budget
-    if (budget < 3000){
+    if (happiness < 200){
         document.getElementById("hapo").innerHTML = "Sad"
     }
-    else if(budget >= 3000){
+    else if(happiness >= 200){
         document.getElementById("hapo").innerHTML = "Great"
     }
+}
+
+function biol(){
+    budget = document.getElementById("bio").value
+    
+    
 }
 
