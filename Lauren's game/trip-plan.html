@@ -6,56 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/base.css">
     <title>Lauren's Budget Game</title>
+    <script src="trip.js"></script>
 </head>
 <body>
-
-    <script>
-        let total = 10000
-        let happiness = 100
-
-        
-
-   
-        </script>
 
     <main id="budget-main">
         <p id="urMom">Remember!</p>
         <p id="urMom">1. You will not be able to make changes to the amounts you input once you start your trip.</p>
         <p id="urMom">2. Happiness points from the transportation and living accommodations you select will be added to your first day on the vacation.</p>
         <p id="urMom">3. You need to obtain a minimum of 200 happiness points a day to enjoy your trip.</p>
-        <p id="total-budget">Total Budget: </p><p id = "budget"></p>
-        <p id="happiness">Happiness: 100 </p>
+
+        <center><button type="button" onclick="text()">Start Budgeting</button> </center>
+
+        <center>
+
+        <p id="total-budget">Total Budget: </p>  <p style = "font-size:24px" id="script"></p> 
+        <p>Happiness:</p>
+        <p style = "font-size:24px"; id="hap"></p>
+    </center>
+
         <div id="budget-block">
         <div class="trip-allocation" id="alloc-1">
             <h4 id="trip">Transportation (including flight, car rental, gas, and parking):</h4>
             <p>Type in 1 or 2 in the box below for which option you wish to purchase.</p>
-            <p>1. Economy Transportation: $1500 (happiness- 10)</p>
+            <p>1. Economy Transportation: $1500 (happiness- 10)</p> 
+
+            <button id="eco" onclick="tran1()">economy</button>
             <p>2. First Class Transportation: $2000 (happiness- 50)</p>
-            <img src = "">
-            <input class="allocation" id="transportation" onchange="budget1()"></div>
+            <button id="first" onclick="tran1()">First Class</button>
+            
+
+
+        </div>
         </div>
         <div class="trip-allocation" id = "alloc-2">
             <h4 id="tri">Living Accommodations for 7 days:</h4>
             <p>Type in 1, 2, or 3 in the box below for which option you wish to purchase.</p>
-            <p>1. Motel Room: $700 (happiness- 10)</p>
-            <p>2. Airbnb: $950 (happiness- 50)</p>
-            <p>3. Suite: $1200 (happiness- 100)</p>
-            <img src="#">
-            <input class="allocation" id = "accomadations" type="number" ></div>
+            <p>1. Motel Room: $700 (happiness- 10)</p> <button id="motel" onclick="live1()">Motel</button>
+            <p>2. Airbnb: $950 (happiness- 50)</p> <button id="air" onclick="live2()">Airbnb</button>
+            <p>3. Suite: $1200 (happiness- 100)</p> <button id="suite" onclick="live3()">Suite</button>
+            
+            
         </div>
         <div class="trip-allocation" id="alloc-3">
             <h4>Food</h4>
             <p>The suggested amount is to have between 12%-20% of your total savings.</p>
             <p>Type in the amount of money you are going to budget for your food on your trip.</p>
-            <img src="#">
+            
             <input class="allocation" id="food" type="text" required></div>
         </div>
         <div class="trip-allocation" id="alloc-4">
             <h4>Recreation:</h4>
             <p>The suggested amount is to have between 20%-50% of your total savings.</p>
             <p>Type in the amount of money you are going to budget for recreational activities on your trip.</p>
-            <img src="#">
-            <input class="allocation" id="recreation" type="number" required></div>
+            
+            <center><input class="allocation" id="recreation" type="number" required></center>
+            </div>
         </div>
         </div>
         <button onclick={console.log(total)}>Start Trip</button>

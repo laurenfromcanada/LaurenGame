@@ -1,19 +1,34 @@
 let budget = 10000
 let happiness = 100
 
-function budget1(){
-    document.getElementById("transportation").innerHTML = "This text has been written inside the JavaScript."; // this changes budget everytime
 
-    if (transportation.value.target === 1){
-document.getElementById("transportation").innerHTML = (budget - 1500);
-        console.log(budget)
-    }
-    else if (transportation.value.target === 2){
-        document.getElementById("transportation").innerHTML = (budget - 2000);
-                console.log(budget)
-            }
+
+function text() 
+{
+    document.getElementById("script").innerHTML = budget;
+    document.getElementById("hap").innerHTML = happiness;
 }
 
-function budget2(){
-    
+
+
+function tran1(){
+    budget = budget - 1500
+    document.getElementById("script").innerHTML = budget
+    document.getElementById("eco").innerHTML = "";
+    document.getElementById("first").innerHTML = "";
+}
+
+function tran2(){
+    budget = budget - 1500
+    document.getElementById("script").innerHTML = budget
+    document.getElementById("eco").innerHTML = "";
+    document.getElementById("first").innerHTML = "";
+}
+
+function live1(){
+    budget = budget - 700
+    document.getElementById("script").innerHTML = budget
+    document.getElementById("motel").innerHTML = "";
+    document.getElementById("air").innerHTML = "";
+    document.getElementById("suite").innerHTML = "";
 }
