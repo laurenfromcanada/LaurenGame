@@ -74,6 +74,7 @@ function recreation1(){
 }
 
 function HorS(){
+    document.getElementById("budo").innerHTML = budget
     if (budget < 3000){
         document.getElementById("hapo").innerHTML = "Sad"
     }
