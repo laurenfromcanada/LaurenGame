@@ -1,5 +1,7 @@
-let budget = 10000
+let budget = localStorage.getItem('budget')
 let happiness = 100
+
+
 
 function text() 
 {
@@ -84,8 +86,62 @@ function HorS(){
 }
 
 function biol(){
-    budget = document.getElementById("bio").value
-    
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
     
 }
 
+function therapist(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function programmer(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function photographer(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function nurse(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function musician(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function Marketing(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function hr(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function finance(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function engineer(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function dietician(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
+
+function artist(){
+    let input = (document.getElementById("budget").value)
+    localStorage.setItem('budget', input);
+}
