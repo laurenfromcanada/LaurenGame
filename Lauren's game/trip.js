@@ -60,7 +60,16 @@ function live3(){
 }
 
 function food1(){
-    let food = document.getElementById("food")
+    let food = document.getElementById("food").value
     budget = budget - food
-    document.getElementById("script").value = budget
+    console.log(food)
+    document.getElementById("food").innerHTML = "";
 }
+
+// function recreation1(){
+//     let food = document.getElementById("food")
+//     budget = budget - food
+//     document.getElementById("script").value = budget
+//     console.log('test')
+// }
+
