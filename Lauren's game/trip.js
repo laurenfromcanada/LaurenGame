@@ -1,8 +1,6 @@
 let budget = 10000
 let happiness = 100
 
-
-
 function text() 
 {
     document.getElementById("script").innerHTML = budget;
@@ -64,6 +62,7 @@ function food1(){
     budget = budget - food
     console.log(food)
     document.getElementById("food").innerHTML = "";
+    document.getElementById("script").innerHTML = budget
 }
 
 // function recreation1(){
