@@ -1,5 +1,5 @@
 let budget = localStorage.getItem('budget')
-let happiness = 0
+let happiness = 100
 
 
 
