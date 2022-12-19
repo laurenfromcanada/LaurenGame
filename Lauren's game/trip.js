@@ -1,8 +1,6 @@
 let budget = localStorage.getItem('budget')
 let happiness = 100
 
-
-
 function text() 
 {
     document.getElementById("script").innerHTML = budget;
